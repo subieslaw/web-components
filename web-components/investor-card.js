@@ -2,11 +2,11 @@ const template = document.createElement("template");
 template.innerHTML = `
 <style>
     .investor-card {
-        background: #f4f4f4;
-        width: 500px;
+        background: var(--investor-card-background-color, #f4f4f4);
+        font-family: 'Source Code Pro', monospace;
+        width: 450px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 10px;
+        grid-template-columns: 40% auto;
     }
 
     .investor-card img {

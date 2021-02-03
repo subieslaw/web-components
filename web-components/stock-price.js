@@ -10,7 +10,7 @@ class StockPrice extends HTMLElement {
          <style>
           h2 {
             color: white;
-            background-color: var(--stock-prive-background-color, #666);
+            background-color: #666;
             padding: 5px;
           }
          </style>

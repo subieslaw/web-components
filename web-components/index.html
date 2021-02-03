@@ -11,15 +11,39 @@
         h3 {
           color: purple;  
         }
+        .container {
+            display: flex; 
+            flex-direction: row;
+            flex-grow: 3;
+            flex-wrap: wrap;
+          }
+        .red {
+            --investor-card-background-color: green;
+        }  
     </style>
 </head>
 <body>
     <main>
         <h3>Hall of fame:</h3>
-        <investor-card name="Taylor Bodman" avatar="https://randomuser.me/api/portraits/men/17.jpg">
-            <div slot="email">taylor.bodman@topone.percent</div>
-            <div slot="phone">+55 555-555-555</div>
-        </investor-card>
+        <div class="container">
+            <investor-card name="Jeff Boldman" avatar="https://randomuser.me/api/portraits/men/17.jpg">
+                <div slot="email">jeff.boldman@topone.percent</div>
+                <div slot="phone">+55 555-555-551</div>
+            </investor-card>
+            <investor-card name="Phil Tired" avatar="https://randomuser.me/api/portraits/men/12.jpg">
+                <div slot="email">phil.tired@topone.percent</div>
+                <div slot="phone">+55 555-555-552</div>
+            </investor-card>
+            <investor-card name="Kevin Stoned" avatar="https://randomuser.me/api/portraits/men/13.jpg">
+                <div slot="email">kevin.stoned@topone.percent</div>
+                <div slot="phone">+55 555-555-553</div>
+            </investor-card>
+            <investor-card class="red" name="Will Greenwig" avatar="https://randomuser.me/api/portraits/men/9.jpg">
+                <div slot="email">will.greenwig@topone.percent</div>
+                <div slot="phone">+55 555-555-554</div>
+            </investor-card>
+            
+        </div>
     </main>
 </body>
 </html>
